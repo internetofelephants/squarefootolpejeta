@@ -1,0 +1,130 @@
+[
+ {
+  "id": 1,
+  "key": "grass",
+  "name": "Open grassland",
+  "speed": 1.0,
+  "color": "#c8c46a",
+  "share_inside": 0.7055
+ },
+ {
+  "id": 2,
+  "key": "thorn",
+  "name": "Bushed grassland (whistling thorn)",
+  "speed": 0.7,
+  "color": "#a3a24e",
+  "share_inside": 0.139
+ },
+ {
+  "id": 3,
+  "key": "bush",
+  "name": "Dense bush / thicket",
+  "speed": 0.4,
+  "color": "#6f7a35",
+  "share_inside": 0.0523
+ },
+ {
+  "id": 4,
+  "key": "woodland",
+  "name": "Acacia woodland",
+  "speed": 0.5,
+  "color": "#4f6a2c",
+  "share_inside": 0.0241
+ },
+ {
+  "id": 5,
+  "key": "riverine",
+  "name": "Riverine woodland",
+  "speed": 0.45,
+  "color": "#2f5a2a",
+  "share_inside": 0.0142
+ },
+ {
+  "id": 6,
+  "key": "swamp",
+  "name": "Swamp / marsh",
+  "speed": 0.3,
+  "color": "#6e8f6a",
+  "share_inside": 0.0029
+ },
+ {
+  "id": 7,
+  "key": "water",
+  "name": "Open water (dam / waterhole)",
+  "speed": 0,
+  "color": "#3d6ea8",
+  "share_inside": 0.0014
+ },
+ {
+  "id": 8,
+  "key": "river",
+  "name": "River",
+  "speed": 0,
+  "color": "#2f5f9e",
+  "share_inside": 0.007
+ },
+ {
+  "id": 9,
+  "key": "stream",
+  "name": "Stream bed / lugga",
+  "speed": 0.5,
+  "color": "#9c8a5c",
+  "share_inside": 0.0097
+ },
+ {
+  "id": 10,
+  "key": "ford",
+  "name": "Ford / crossing",
+  "speed": 0.6,
+  "color": "#b09a6a",
+  "share_inside": 0.0002
+ },
+ {
+  "id": 11,
+  "key": "road",
+  "name": "Murram road",
+  "speed": 1.8,
+  "color": "#b8683c",
+  "share_inside": 0.0024
+ },
+ {
+  "id": 12,
+  "key": "track",
+  "name": "Dirt track",
+  "speed": 1.5,
+  "color": "#f2e6cc",
+  "share_inside": 0.0345
+ },
+ {
+  "id": 13,
+  "key": "path",
+  "name": "Footpath",
+  "speed": 1.1,
+  "color": "#e9dcc0",
+  "share_inside": 0.0004
+ },
+ {
+  "id": 14,
+  "key": "bare",
+  "name": "Bare ground",
+  "speed": 1.0,
+  "color": "#d9c7a0",
+  "share_inside": 0.0003
+ },
+ {
+  "id": 15,
+  "key": "farmland",
+  "name": "Farmland (outside)",
+  "speed": 0.8,
+  "color": "#b7b86c",
+  "share_inside": 0.0058
+ },
+ {
+  "id": 16,
+  "key": "built",
+  "name": "Buildings / compound",
+  "speed": 0,
+  "color": "#8a6f63",
+  "share_inside": 0.0002
+ }
+]

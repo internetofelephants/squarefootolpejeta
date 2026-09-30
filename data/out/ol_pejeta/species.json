@@ -1,0 +1,1175 @@
+{
+ "note": "Counts only. No GBIF coordinates were downloaded or stored. Habitats come from the config catalogue (general species knowledge), not from GBIF.",
+ "licenses_counted": [
+  "CC0_1_0",
+  "CC_BY_4_0"
+ ],
+ "records_by_license": {
+  "CC_BY_4_0": 37306,
+  "CC_BY_NC_4_0": 12858,
+  "CC0_1_0": 176
+ },
+ "animals": [
+  {
+   "sprite": "elephant",
+   "name": "African bush elephant",
+   "scientific": "Loxodonta africana",
+   "habitats": [
+    "thorn",
+    "bush",
+    "woodland",
+    "riverine",
+    "grass"
+   ],
+   "herd": [
+    3,
+    12
+   ],
+   "density": 1.5,
+   "gbif_key": 2435350,
+   "gbif_name": "Loxodonta africana (Blumenbach, 1797)",
+   "rank": "SPECIES",
+   "records": 43,
+   "iucn": "EN",
+   "sensitive": true,
+   "placement": "random_in_habitat"
+  },
+  {
+   "sprite": "giraffe",
+   "name": "Giraffe",
+   "scientific": "Giraffa camelopardalis",
+   "habitats": [
+    "thorn",
+    "woodland",
+    "riverine"
+   ],
+   "herd": [
+    2,
+    8
+   ],
+   "density": 1.5,
+   "gbif_key": 2441205,
+   "gbif_name": "Giraffa camelopardalis (Linnaeus, 1758)",
+   "rank": "SPECIES",
+   "records": 49,
+   "iucn": "VU",
+   "sensitive": true,
+   "placement": "random_in_habitat"
+  },
+  {
+   "sprite": "zebra",
+   "name": "Plains zebra",
+   "scientific": "Equus quagga",
+   "habitats": [
+    "grass",
+    "thorn"
+   ],
+   "herd": [
+    6,
+    25
+   ],
+   "density": 4,
+   "gbif_key": 2440892,
+   "gbif_name": "Equus quagga Boddaert, 1785",
+   "rank": "SPECIES",
+   "records": 164,
+   "iucn": "NT",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "grevy",
+   "name": "Grevy's zebra",
+   "scientific": "Equus grevyi",
+   "habitats": [
+    "grass",
+    "thorn"
+   ],
+   "herd": [
+    2,
+    8
+   ],
+   "density": 0.8,
+   "gbif_key": 2440894,
+   "gbif_name": "Equus grevyi Oustalet, 1882",
+   "rank": "SPECIES",
+   "records": 1,
+   "iucn": "EN",
+   "sensitive": true,
+   "placement": "random_in_habitat"
+  },
+  {
+   "sprite": "buffalo",
+   "name": "African buffalo",
+   "scientific": "Syncerus caffer",
+   "habitats": [
+    "grass",
+    "swamp",
+    "riverine",
+    "thorn"
+   ],
+   "herd": [
+    10,
+    40
+   ],
+   "density": 2,
+   "gbif_key": 2441034,
+   "gbif_name": "Syncerus caffer (Sparrman, 1779)",
+   "rank": "SPECIES",
+   "records": 31,
+   "iucn": "NT",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "hartebeest",
+   "name": "Hartebeest",
+   "scientific": "Alcelaphus buselaphus",
+   "habitats": [
+    "grass"
+   ],
+   "herd": [
+    4,
+    15
+   ],
+   "density": 1.5,
+   "gbif_key": 5220185,
+   "gbif_name": "Alcelaphus buselaphus (Pallas, 1766)",
+   "rank": "SPECIES",
+   "records": 10,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "gazelle",
+   "name": "Thomson's gazelle",
+   "scientific": "Eudorcas thomsonii",
+   "habitats": [
+    "grass"
+   ],
+   "herd": [
+    8,
+    30
+   ],
+   "density": 2,
+   "gbif_key": 7261427,
+   "gbif_name": "Eudorcas thomsonii (G\u00fcnther, 1884)",
+   "rank": "SPECIES",
+   "records": 28,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "gazelle",
+   "name": "Grant's gazelle",
+   "scientific": "Nanger granti",
+   "habitats": [
+    "grass",
+    "thorn"
+   ],
+   "herd": [
+    5,
+    20
+   ],
+   "density": 2,
+   "gbif_key": 7261447,
+   "gbif_name": "Nanger granti (Brooke, 1872)",
+   "rank": "SPECIES",
+   "records": 45,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "impala",
+   "name": "Impala",
+   "scientific": "Aepyceros melampus",
+   "habitats": [
+    "thorn",
+    "woodland",
+    "riverine"
+   ],
+   "herd": [
+    8,
+    30
+   ],
+   "density": 2,
+   "gbif_key": 2441144,
+   "gbif_name": "Aepyceros melampus (Lichtenstein, 1812)",
+   "rank": "SPECIES",
+   "records": 84,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "eland",
+   "name": "Common eland",
+   "scientific": "Taurotragus oryx",
+   "habitats": [
+    "grass",
+    "thorn"
+   ],
+   "herd": [
+    4,
+    20
+   ],
+   "density": 1.5,
+   "gbif_key": 5220167,
+   "gbif_name": "Taurotragus oryx (Pallas, 1766)",
+   "rank": "SPECIES",
+   "records": 26,
+   "iucn": "NE",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "waterbuck",
+   "name": "Waterbuck",
+   "scientific": "Kobus ellipsiprymnus",
+   "habitats": [
+    "riverine",
+    "swamp",
+    "grass"
+   ],
+   "herd": [
+    3,
+    10
+   ],
+   "density": 1.5,
+   "gbif_key": 5220160,
+   "gbif_name": "Kobus ellipsiprymnus (Ogilby, 1833)",
+   "rank": "SPECIES",
+   "records": 8,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "warthog",
+   "name": "Common warthog",
+   "scientific": "Phacochoerus africanus",
+   "habitats": [
+    "grass",
+    "thorn"
+   ],
+   "herd": [
+    1,
+    5
+   ],
+   "density": 3,
+   "gbif_key": 2441212,
+   "gbif_name": "Phacochoerus africanus (Gmelin, 1788)",
+   "rank": "SPECIES",
+   "records": 21,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "ostrich",
+   "name": "Common ostrich",
+   "scientific": "Struthio camelus",
+   "habitats": [
+    "grass"
+   ],
+   "herd": [
+    1,
+    6
+   ],
+   "density": 1.5,
+   "gbif_key": 2495150,
+   "gbif_name": "Struthio camelus Linnaeus, 1758",
+   "rank": "SPECIES",
+   "records": 175,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "baboon",
+   "name": "Olive baboon",
+   "scientific": "Papio anubis",
+   "habitats": [
+    "riverine",
+    "woodland",
+    "thorn"
+   ],
+   "herd": [
+    10,
+    30
+   ],
+   "density": 1.5,
+   "gbif_key": 5707341,
+   "gbif_name": "Papio anubis (Lesson, 1827)",
+   "rank": "SPECIES",
+   "records": 9,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "hippo",
+   "name": "Hippopotamus",
+   "scientific": "Hippopotamus amphibius",
+   "habitats": [
+    "river",
+    "water",
+    "swamp"
+   ],
+   "herd": [
+    2,
+    10
+   ],
+   "density": 1,
+   "gbif_key": 2441247,
+   "gbif_name": "Hippopotamus amphibius Linnaeus, 1758",
+   "rank": "SPECIES",
+   "records": 2,
+   "iucn": "VU",
+   "sensitive": true,
+   "placement": "random_in_habitat"
+  },
+  {
+   "sprite": "lion",
+   "name": "Lion",
+   "scientific": "Panthera leo",
+   "habitats": [
+    "thorn",
+    "bush",
+    "grass"
+   ],
+   "herd": [
+    2,
+    7
+   ],
+   "density": 0.6,
+   "gbif_key": 5219404,
+   "gbif_name": "Panthera leo (Linnaeus, 1758)",
+   "rank": "SPECIES",
+   "records": 13,
+   "iucn": "VU",
+   "sensitive": true,
+   "placement": "random_in_habitat"
+  },
+  {
+   "sprite": "hyena",
+   "name": "Spotted hyena",
+   "scientific": "Crocuta crocuta",
+   "habitats": [
+    "grass",
+    "thorn",
+    "bush"
+   ],
+   "herd": [
+    1,
+    5
+   ],
+   "density": 0.8,
+   "gbif_key": 5218781,
+   "gbif_name": "Crocuta crocuta (Erxleben, 1777)",
+   "rank": "SPECIES",
+   "records": 11,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "cheetah",
+   "name": "Cheetah",
+   "scientific": "Acinonyx jubatus",
+   "habitats": [
+    "grass"
+   ],
+   "herd": [
+    1,
+    3
+   ],
+   "density": 0.3,
+   "gbif_key": 2435270,
+   "gbif_name": "Acinonyx jubatus (Schreber, 1775)",
+   "rank": "SPECIES",
+   "records": 2,
+   "iucn": "VU",
+   "sensitive": true,
+   "placement": "random_in_habitat"
+  },
+  {
+   "sprite": "rhino",
+   "name": "Black rhinoceros",
+   "scientific": "Diceros bicornis",
+   "habitats": [
+    "bush",
+    "thorn",
+    "woodland"
+   ],
+   "herd": [
+    1,
+    2
+   ],
+   "density": 0.8,
+   "gbif_key": 5220111,
+   "gbif_name": "Diceros bicornis (Linnaeus, 1758)",
+   "rank": "SPECIES",
+   "records": 12,
+   "iucn": "CR",
+   "sensitive": true,
+   "placement": "random_in_habitat"
+  },
+  {
+   "sprite": "rhino",
+   "name": "Southern white rhinoceros",
+   "scientific": "Ceratotherium simum",
+   "habitats": [
+    "grass",
+    "thorn"
+   ],
+   "herd": [
+    1,
+    4
+   ],
+   "density": 1,
+   "gbif_key": 2440880,
+   "gbif_name": "Ceratotherium simum (Burchell, 1817)",
+   "rank": "SPECIES",
+   "records": 20,
+   "iucn": "NT",
+   "sensitive": true,
+   "placement": "random_in_habitat"
+  }
+ ],
+ "plants": [
+  {
+   "sprite": "thorn",
+   "name": "Whistling thorn",
+   "scientific": "Vachellia drepanolobium",
+   "habitats": [
+    "thorn",
+    "bush"
+   ],
+   "gbif_key": 3974788,
+   "gbif_name": "Vachellia drepanolobium (Harms ex Y.Sj\u00f6stedt) P.J.H.Hurter",
+   "rank": "SPECIES",
+   "records": 4,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "fever_tree",
+   "name": "Yellow fever tree",
+   "scientific": "Vachellia xanthophloea",
+   "habitats": [
+    "riverine",
+    "swamp"
+   ],
+   "gbif_key": 7403310,
+   "gbif_name": "Vachellia xanthophloea (Benth.) Banfi & Galasso",
+   "rank": "SPECIES",
+   "records": 2,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "guarri",
+   "name": "Magic guarri",
+   "scientific": "Euclea divinorum",
+   "habitats": [
+    "bush",
+    "woodland"
+   ],
+   "gbif_key": 5662686,
+   "gbif_name": "Euclea divinorum Hiern",
+   "rank": "SPECIES",
+   "records": 1,
+   "iucn": "LC",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  },
+  {
+   "sprite": "grass",
+   "name": "Red oat grass",
+   "scientific": "Themeda triandra",
+   "habitats": [
+    "grass",
+    "thorn"
+   ],
+   "gbif_key": 2703467,
+   "gbif_name": "Themeda triandra Forssk.",
+   "rank": "SPECIES",
+   "records": 1,
+   "iucn": "NE",
+   "sensitive": false,
+   "placement": "procedural_by_habitat"
+  }
+ ],
+ "not_confirmed": [],
+ "gbif_top_species": {
+  "mammals": [
+   {
+    "scientific": "Equus quagga",
+    "vernacular": "plains zebra",
+    "records": 164
+   },
+   {
+    "scientific": "Aepyceros melampus",
+    "vernacular": "impala",
+    "records": 84
+   },
+   {
+    "scientific": "Giraffa camelopardalis",
+    "vernacular": "giraffe",
+    "records": 49
+   },
+   {
+    "scientific": "Nanger granti",
+    "vernacular": "Grant's gazelle",
+    "records": 45
+   },
+   {
+    "scientific": "Loxodonta africana",
+    "vernacular": "African elephant",
+    "records": 43
+   },
+   {
+    "scientific": "Syncerus caffer",
+    "vernacular": "African buffalo",
+    "records": 31
+   },
+   {
+    "scientific": "Eudorcas thomsonii",
+    "vernacular": "Thomson's gazelle",
+    "records": 28
+   },
+   {
+    "scientific": "Taurotragus oryx",
+    "vernacular": "common eland",
+    "records": 26
+   },
+   {
+    "scientific": "Phacochoerus africanus",
+    "vernacular": "common warthog",
+    "records": 21
+   },
+   {
+    "scientific": "Ceratotherium simum",
+    "vernacular": "white rhinoceros",
+    "records": 20
+   },
+   {
+    "scientific": "Giraffa reticulata",
+    "vernacular": "Reticulated Giraffe",
+    "records": 19
+   },
+   {
+    "scientific": "Panthera leo",
+    "vernacular": "lion",
+    "records": 13
+   },
+   {
+    "scientific": "Diceros bicornis",
+    "vernacular": "black rhinoceros",
+    "records": 12
+   },
+   {
+    "scientific": "Crocuta crocuta",
+    "vernacular": "spotted hyaena",
+    "records": 11
+   },
+   {
+    "scientific": "Alcelaphus buselaphus",
+    "vernacular": "hartebeest",
+    "records": 10
+   },
+   {
+    "scientific": "Papio anubis",
+    "vernacular": "olive baboon",
+    "records": 9
+   },
+   {
+    "scientific": "Kobus ellipsiprymnus",
+    "vernacular": "waterbuck",
+    "records": 8
+   },
+   {
+    "scientific": "Tragelaphus scriptus",
+    "vernacular": "bushbuck",
+    "records": 7
+   },
+   {
+    "scientific": "Alcelaphus cokii",
+    "vernacular": "Coke's hartebeest",
+    "records": 4
+   },
+   {
+    "scientific": "Raphicerus campestris",
+    "vernacular": "steenbok",
+    "records": 3
+   },
+   {
+    "scientific": "Canis mesomelas",
+    "vernacular": "black-backed jackal",
+    "records": 3
+   },
+   {
+    "scientific": "Acinonyx jubatus",
+    "vernacular": "cheetah",
+    "records": 2
+   },
+   {
+    "scientific": "Hippopotamus amphibius",
+    "vernacular": "hippo",
+    "records": 2
+   },
+   {
+    "scientific": "Ichneumia albicauda",
+    "vernacular": "white-tailed mongoose",
+    "records": 1
+   },
+   {
+    "scientific": "Otocyon megalotis",
+    "vernacular": "bat-eared fox",
+    "records": 1
+   },
+   {
+    "scientific": "Equus grevyi",
+    "vernacular": "Grevy's zebra",
+    "records": 1
+   },
+   {
+    "scientific": "Neotragus moschatus",
+    "vernacular": "suni",
+    "records": 1
+   },
+   {
+    "scientific": "Myocastor coypus",
+    "vernacular": "coypu",
+    "records": 1
+   },
+   {
+    "scientific": "Galerella sanguinea",
+    "vernacular": "slender mongoose",
+    "records": 1
+   },
+   {
+    "scientific": "Lycaon pictus",
+    "vernacular": "African wild dog",
+    "records": 1
+   },
+   {
+    "scientific": "Genetta maculata",
+    "vernacular": "Rusty-spotted genet",
+    "records": 1
+   },
+   {
+    "scientific": "Pan troglodytes",
+    "vernacular": "chimpanzee",
+    "records": 1
+   },
+   {
+    "scientific": "Oryx beisa",
+    "vernacular": "East African oryx",
+    "records": 1
+   },
+   {
+    "scientific": "Papio cynocephalus",
+    "vernacular": "yellow baboon",
+    "records": 1
+   },
+   {
+    "scientific": "Chlorocebus pygerythrus",
+    "vernacular": "vervet monkey",
+    "records": 1
+   },
+   {
+    "scientific": "Ceratotherium cottoni",
+    "vernacular": "northern white rhinoceros",
+    "records": 1
+   },
+   {
+    "scientific": "Canis lupaster",
+    "vernacular": "African Golden Wolf",
+    "records": 1
+   },
+   {
+    "scientific": "Xerus erythropus",
+    "vernacular": "Striped Ground Squirrel",
+    "records": 1
+   },
+   {
+    "scientific": "Giraffa tippelskirchi",
+    "vernacular": "Masai Giraffe",
+    "records": 1
+   }
+  ],
+  "birds": [
+   {
+    "scientific": "Lamprotornis superbus",
+    "vernacular": "Superb Starling",
+    "records": 861
+   },
+   {
+    "scientific": "Alopochen aegyptiaca",
+    "vernacular": "Egyptian Goose",
+    "records": 707
+   },
+   {
+    "scientific": "Numida meleagris",
+    "vernacular": "Helmeted Guineafowl",
+    "records": 696
+   },
+   {
+    "scientific": "Vanellus coronatus",
+    "vernacular": "Crowned Lapwing",
+    "records": 695
+   },
+   {
+    "scientific": "Vanellus armatus",
+    "vernacular": "Blacksmith Lapwing",
+    "records": 602
+   },
+   {
+    "scientific": "Lamprotornis chalybaeus",
+    "vernacular": "Greater Blue-eared Starling",
+    "records": 596
+   },
+   {
+    "scientific": "Pternistis leucoscepus",
+    "vernacular": "Yellow-necked Francolin",
+    "records": 586
+   },
+   {
+    "scientific": "Streptopelia capicola",
+    "vernacular": "Ring-necked Dove",
+    "records": 531
+   },
+   {
+    "scientific": "Threskiornis aethiopicus",
+    "vernacular": "Sacred Ibis",
+    "records": 483
+   },
+   {
+    "scientific": "Dicrurus adsimilis",
+    "vernacular": "Fork-tailed Drongo",
+    "records": 473
+   },
+   {
+    "scientific": "Coracias caudatus",
+    "vernacular": "Lilac-breasted Roller",
+    "records": 470
+   },
+   {
+    "scientific": "Balearica regulorum",
+    "vernacular": "Gray Crowned-Crane",
+    "records": 470
+   },
+   {
+    "scientific": "Bostrychia hagedash",
+    "vernacular": "Hadada Ibis",
+    "records": 467
+   },
+   {
+    "scientific": "Pycnonotus barbatus",
+    "vernacular": "Common Bulbul",
+    "records": 450
+   },
+   {
+    "scientific": "Buphagus erythrorhynchus",
+    "vernacular": "Red-billed Oxpecker",
+    "records": 446
+   },
+   {
+    "scientific": "Bubulcus ibis",
+    "vernacular": "Cattle Egret",
+    "records": 432
+   },
+   {
+    "scientific": "Passer rufocinctus",
+    "vernacular": "Kenya Rufous Sparrow",
+    "records": 419
+   },
+   {
+    "scientific": "Colius striatus",
+    "vernacular": "Speckled Mousebird",
+    "records": 365
+   },
+   {
+    "scientific": "Plocepasser mahali",
+    "vernacular": "White-browed Sparrow-Weaver",
+    "records": 362
+   },
+   {
+    "scientific": "Aquila rapax",
+    "vernacular": "Tawny Eagle",
+    "records": 361
+   },
+   {
+    "scientific": "Uraeginthus bengalus",
+    "vernacular": "Red-cheeked Cordonbleu",
+    "records": 360
+   },
+   {
+    "scientific": "Eupodotis senegalensis",
+    "vernacular": "White-bellied Bustard",
+    "records": 349
+   },
+   {
+    "scientific": "Buphagus africanus",
+    "vernacular": "Yellow-billed Oxpecker",
+    "records": 349
+   },
+   {
+    "scientific": "Anas undulata",
+    "vernacular": "Yellow-billed Duck",
+    "records": 335
+   },
+   {
+    "scientific": "Poicephalus meyeri",
+    "vernacular": "Meyer's Parrot",
+    "records": 323
+   },
+   {
+    "scientific": "Corythaixoides leucogaster",
+    "vernacular": "White-bellied Go-away-bird",
+    "records": 321
+   },
+   {
+    "scientific": "Motacilla aguimp",
+    "vernacular": "African Pied Wagtail",
+    "records": 318
+   },
+   {
+    "scientific": "Hirundo rustica",
+    "vernacular": "Barn Swallow",
+    "records": 318
+   },
+   {
+    "scientific": "Ardeotis kori",
+    "vernacular": "Kori Bustard",
+    "records": 315
+   },
+   {
+    "scientific": "Streptopelia semitorquata",
+    "vernacular": "Red-eyed Dove",
+    "records": 315
+   },
+   {
+    "scientific": "Corvus albus",
+    "vernacular": "Pied Crow",
+    "records": 308
+   },
+   {
+    "scientific": "Eurocephalus ruppelli",
+    "vernacular": "White-rumped Shrike",
+    "records": 306
+   },
+   {
+    "scientific": "Oriolus larvatus",
+    "vernacular": "African Black-headed Oriole",
+    "records": 303
+   },
+   {
+    "scientific": "Calandrella cinerea",
+    "vernacular": "Red-capped Lark",
+    "records": 302
+   },
+   {
+    "scientific": "Lamprotornis purpuroptera",
+    "vernacular": "R\u00fcppell's Starling",
+    "records": 295
+   },
+   {
+    "scientific": "Ardea melanocephala",
+    "vernacular": "Black-headed Heron",
+    "records": 291
+   },
+   {
+    "scientific": "Cisticola chiniana",
+    "vernacular": "Rattling Cisticola",
+    "records": 282
+   },
+   {
+    "scientific": "Crithagra reichenowi",
+    "vernacular": "Reichenow's Seedeater",
+    "records": 280
+   },
+   {
+    "scientific": "Ploceus spekei",
+    "vernacular": "Speke's Weaver",
+    "records": 272
+   },
+   {
+    "scientific": "Creatophora cinerea",
+    "vernacular": "Wattled Starling",
+    "records": 268
+   }
+  ],
+  "plants (dicots)": [
+   {
+    "scientific": "Senna didymobotrya",
+    "vernacular": "candelabra-tree",
+    "records": 10
+   },
+   {
+    "scientific": "Kalanchoe delagoensis",
+    "vernacular": "Chandelier plant, Mother of millions, Mother of Thousands",
+    "records": 10
+   },
+   {
+    "scientific": "Datura stramonium",
+    "vernacular": "Thorn-apple",
+    "records": 9
+   },
+   {
+    "scientific": "Dovyalis caffra",
+    "vernacular": "kei-apple",
+    "records": 8
+   },
+   {
+    "scientific": "Opuntia ficus-indica",
+    "vernacular": "Indian-Fig",
+    "records": 8
+   },
+   {
+    "scientific": "Solanum campylacanthum",
+    "vernacular": "Apple of Sodom",
+    "records": 7
+   },
+   {
+    "scientific": "Duranta erecta",
+    "vernacular": "Angel's whisper, Golden dewdrop, Pigeon berry, Skyflower",
+    "records": 6
+   },
+   {
+    "scientific": "Mirabilis jalapa",
+    "vernacular": "Marvel-of-Peru",
+    "records": 6
+   },
+   {
+    "scientific": "Tecomaria capensis",
+    "vernacular": "Cape Honeysuckle",
+    "records": 6
+   },
+   {
+    "scientific": "Tecoma stans",
+    "vernacular": "Yellow bells",
+    "records": 6
+   },
+   {
+    "scientific": "Euryops chrysanthemoides",
+    "vernacular": "Bull's Eye",
+    "records": 6
+   },
+   {
+    "scientific": "Grevillea robusta",
+    "vernacular": "Silky Oak",
+    "records": 5
+   },
+   {
+    "scientific": "Cirsium vulgare",
+    "vernacular": "Spear Thistle",
+    "records": 5
+   },
+   {
+    "scientific": "Thunbergia alata",
+    "vernacular": "Black eyed Susan vine, Black-eyed Susan, Black-eyed Susan clock vine, Bright eyes, Winged clockvine",
+    "records": 5
+   },
+   {
+    "scientific": "Selenicereus undatus",
+    "vernacular": "Nightblooming Cactus",
+    "records": 4
+   },
+   {
+    "scientific": "Solanum mauritianum",
+    "vernacular": "Tree tobacco, Wild tobacco tree, Earleaf nightshade, Woolly nightshade, Bugweed, Tobacco weed, Tobacco bush, Wild tobacco, Kerosene plant, Wild tobacco bush, Wild tobacco plant",
+    "records": 4
+   },
+   {
+    "scientific": "Senna spectabilis",
+    "vernacular": "Casia Amarilla",
+    "records": 4
+   },
+   {
+    "scientific": "Kalanchoe fedtschenkoi",
+    "vernacular": "lavender scallops",
+    "records": 4
+   },
+   {
+    "scientific": "Cascabela thevetia",
+    "vernacular": "Be-still tree",
+    "records": 4
+   },
+   {
+    "scientific": "Jacaranda mimosifolia",
+    "vernacular": "Black Poui",
+    "records": 4
+   },
+   {
+    "scientific": "Vachellia drepanolobium",
+    "vernacular": "ant-gall acacia",
+    "records": 4
+   },
+   {
+    "scientific": "Psidium guajava",
+    "vernacular": "Guava, Common guava, Yellow guava, Lemon guava",
+    "records": 4
+   },
+   {
+    "scientific": "Crassula spathulata",
+    "vernacular": null,
+    "records": 4
+   },
+   {
+    "scientific": "Cereus jamacaru",
+    "vernacular": "queen-of-the-night",
+    "records": 4
+   },
+   {
+    "scientific": "Psiadia punctulata",
+    "vernacular": "Resin-Leaved Yellowhead",
+    "records": 3
+   },
+   {
+    "scientific": "Ipomoea hildebrandtii",
+    "vernacular": null,
+    "records": 3
+   },
+   {
+    "scientific": "Kalanchoe prolifera",
+    "vernacular": "Blooming Boxes",
+    "records": 3
+   },
+   {
+    "scientific": "Lantana camara",
+    "vernacular": "Largeleaf Lantana",
+    "records": 2
+   },
+   {
+    "scientific": "Ipomoea cairica",
+    "vernacular": "Mile-a-minute vine, Messina creeper, Cairo morning glory, Coast morning glory, Coastal morning glory, Railroad creeper, Railway creeper, Five-fingered morning glory, Five-leaf morning glory",
+    "records": 2
+   },
+   {
+    "scientific": "Senna septemtrionalis",
+    "vernacular": "Arsenic Bush",
+    "records": 2
+   },
+   {
+    "scientific": "Sphagneticola trilobata",
+    "vernacular": "Bay Biscayne creeping-oxeye, Creeping ox-eye, Singapore daisy, Trailing daisy",
+    "records": 2
+   },
+   {
+    "scientific": "Catharanthus roseus",
+    "vernacular": "Madagascar periwinkle, Rose periwinkle, Rosy periwinkle, Cape periwinkle, Old-maid, Pink periwinkle",
+    "records": 2
+   },
+   {
+    "scientific": "Hibiscus aponeurus",
+    "vernacular": null,
+    "records": 2
+   },
+   {
+    "scientific": "Biancaea decapetala",
+    "vernacular": "Mauritius thorn, Mysore thorn, Shoofly, Cat's claw, Thorny poinciana",
+    "records": 2
+   },
+   {
+    "scientific": "Kalanchoe beharensis",
+    "vernacular": "Velvet leaf",
+    "records": 2
+   },
+   {
+    "scientific": "Brugmansia suaveolens",
+    "vernacular": "Brazil's white angel trumpet, Angel's tears",
+    "records": 2
+   },
+   {
+    "scientific": "Rhynchosia minima",
+    "vernacular": "Least Snoutbean",
+    "records": 2
+   },
+   {
+    "scientific": "Opuntia microdasys",
+    "vernacular": "bunny-ears prickly-pear",
+    "records": 2
+   },
+   {
+    "scientific": "Vachellia xanthophloea",
+    "vernacular": "Fever Tree",
+    "records": 2
+   },
+   {
+    "scientific": "Salvia coccinea",
+    "vernacular": "Blood sage, Scarlet sage, Texas sage, Tropical sage, Cherry red sage",
+    "records": 2
+   }
+  ],
+  "plants (monocots)": [
+   {
+    "scientific": "Tradescantia pallida",
+    "vernacular": "Purple Queen",
+    "records": 6
+   },
+   {
+    "scientific": "Tradescantia zebrina",
+    "vernacular": "Inchplant, Wandering jew, Cockroach grass, Purple wandering Jew, Silver inch plant, Striped trad, Striped wandering creeper, Striped wandering Jew, Wandering zebrina, Zebra plant",
+    "records": 4
+   },
+   {
+    "scientific": "Cenchrus mezianus",
+    "vernacular": "Bamboo Grass",
+    "records": 4
+   },
+   {
+    "scientific": "Canna indica",
+    "vernacular": "Indian-shot",
+    "records": 4
+   },
+   {
+    "scientific": "Agave sisalana",
+    "vernacular": "Sisal Hemp",
+    "records": 2
+   },
+   {
+    "scientific": "Agave americana",
+    "vernacular": "Centuryplant",
+    "records": 2
+   },
+   {
+    "scientific": "Chloris gayana",
+    "vernacular": "Rhodes Grass",
+    "records": 2
+   },
+   {
+    "scientific": "Canna generalis",
+    "vernacular": null,
+    "records": 2
+   },
+   {
+    "scientific": "Themeda triandra",
+    "vernacular": "red grass",
+    "records": 1
+   },
+   {
+    "scientific": "Carex conferta",
+    "vernacular": null,
+    "records": 1
+   },
+   {
+    "scientific": "Albuca abyssinica",
+    "vernacular": null,
+    "records": 1
+   },
+   {
+    "scientific": "Pentameris borussica",
+    "vernacular": null,
+    "records": 1
+   }
+  ]
+ }
+}

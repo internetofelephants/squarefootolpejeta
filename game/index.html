@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>squarefoot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; height: 100%; background: #2a2218; overflow: hidden; }
+  #game { display: block; image-rendering: pixelated; image-rendering: crisp-edges; }
+  .panel { position: fixed; color: #f4ecd4; font: 20px/1.1 VT323, ui-monospace, monospace;
+           text-shadow: 1px 1px 0 #1a140c; pointer-events: none; }
+  #hud { top: 10px; left: 12px; background: rgba(26, 20, 12, 0.55); padding: 6px 10px; border-radius: 3px; }
+  #hud .place { color: #e9d48a; }
+  #hud .near { color: #bfe0a0; }
+  #help { bottom: 10px; left: 12px; font-size: 18px; opacity: 0.85; }
+  #minimap { position: fixed; right: 12px; bottom: 12px; width: min(220px, 34vw); image-rendering: pixelated;
+             border: 2px solid #1a140c; box-shadow: 0 0 0 1px #6a5a40; background: #1a140c; }
+  #minimap.big { width: min(80vh, 80vw); right: 50%; bottom: 50%; transform: translate(50%, 50%); }
+  #status { top: 45%; width: 100%; text-align: center; font-size: 28px; }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="hud" class="panel"></div>
+<div id="help" class="panel">←↑→↓ / WASD drive · M map · Z zoom · grid = 1 ha</div>
+<canvas id="minimap"></canvas>
+<div id="status" class="panel">Loading the map…</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>

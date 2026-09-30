@@ -1,0 +1,111 @@
+# Everything specific to one protected area lives in this file.
+# To run the pipeline for another place, copy this file and change it.
+
+id: ol_pejeta
+name: Ol Pejeta Conservancy (east of the river)
+country: Kenya
+
+boundary:
+  osm_relation: 13764596          # "Ol Pejeta Conservancy", leisure=nature_reserve
+
+study_area:
+  # Only the part of the conservancy east of the main river, plus the river itself.
+  split:
+    osm_filter: way["waterway"="river"]   # upper Ewaso Ng'iro (OSM: "Ngare Ngiro" + unnamed stretch)
+    keep: east
+    river_buffer_m: 250          # how much of the west bank to keep with the river
+    river_alongside_only: true   # drop the river where it runs on past the kept side
+
+grid:
+  crs: EPSG:32637                 # UTM zone 37N (metres)
+  resolution_m: 10
+  margin_m: 300                   # extra ground drawn around the study area
+
+osm:
+  widths_m:          # lines are drawn this wide on the 10 m grid
+    road: 10
+    track: 6
+    path: 3
+    river: 20        # the upper Ewaso Ng'iro here is ~10-25 m across
+    stream: 5
+    dam: 10
+
+# How each 10 m cell becomes one tile type (see pipeline/classify.py for the order).
+classify:
+  tree_height_m: 3       # canopy at least this tall counts as tree
+  shrub_height_m: 1      # at least this tall counts as shrub (whistling thorn is ~1-4 m)
+  woodland_tree_frac: 0.30   # share of a cell under tree canopy to call it woodland
+  bush_dense_frac: 0.45      # share under shrub+ canopy to call it dense bush
+  bush_sparse_frac: 0.06     # share under shrub+ canopy to call it bushed (whistling-thorn) savanna
+  riverine_m: 120            # woodland this close to a river or stream is riverine
+  lone_tree_m: 5             # a cell outside woodland with a crown this tall gets a lone tree
+  hillshade_z: 3             # vertical exaggeration for shading (the land here is gentle)
+  hillshade_smooth: 2        # smoothing of the elevation before shading, in cells
+
+# Tile types. ids are stable: the game and legend use them. `speed` is a multiplier
+# for driving (1 = open grass), 0 = impassable. `color` is only for the preview images.
+tiles:
+  - {id: 1,  key: grass,       name: Open grassland,                        speed: 1.0,  color: "#c8c46a"}
+  - {id: 2,  key: thorn,       name: Bushed grassland (whistling thorn),    speed: 0.7,  color: "#a3a24e"}
+  - {id: 3,  key: bush,        name: Dense bush / thicket,                  speed: 0.4,  color: "#6f7a35"}
+  - {id: 4,  key: woodland,    name: Acacia woodland,                       speed: 0.5,  color: "#4f6a2c"}
+  - {id: 5,  key: riverine,    name: Riverine woodland,                     speed: 0.45, color: "#2f5a2a"}
+  - {id: 6,  key: swamp,       name: Swamp / marsh,                         speed: 0.3,  color: "#6e8f6a"}
+  - {id: 7,  key: water,       name: Open water (dam / waterhole),          speed: 0,    color: "#3d6ea8"}
+  - {id: 8,  key: river,       name: River,                                 speed: 0,    color: "#2f5f9e"}
+  - {id: 9,  key: stream,      name: Stream bed / lugga,                    speed: 0.5,  color: "#9c8a5c"}
+  - {id: 10, key: ford,        name: Ford / crossing,                       speed: 0.6,  color: "#b09a6a"}
+  - {id: 11, key: road,        name: Murram road,                           speed: 1.8,  color: "#b8683c"}
+  - {id: 12, key: track,       name: Dirt track,                            speed: 1.5,  color: "#f2e6cc"}
+  - {id: 13, key: path,        name: Footpath,                              speed: 1.1,  color: "#e9dcc0"}
+  - {id: 14, key: bare,        name: Bare ground,                           speed: 1.0,  color: "#d9c7a0"}
+  - {id: 15, key: farmland,    name: Farmland (outside),                    speed: 0.8,  color: "#b7b86c"}
+  - {id: 16, key: built,       name: Buildings / compound,                  speed: 0,    color: "#8a6f63"}
+
+species:
+  gbif_area: boundary              # count records over the whole conservancy, not just the study area
+  licenses: [CC0_1_0, CC_BY_4_0]   # CC-BY-NC records are left out (no commercial use)
+  min_records: 1                   # a catalogue animal needs at least this many records to be included
+  # Never placed from real locations: always random within suitable habitat, and their
+  # GBIF coordinates are never downloaded. (No coordinates are downloaded for any species.)
+  sensitive:
+    iucn: [VU, EN, CR]
+    always: [Rhinocerotidae]       # families, genera or species: all rhinos, whatever their listing
+  # Game animals. Habitats are tile keys (general knowledge of each species, not from GBIF).
+  # herd = [min, max] group size. sprite = the art key in the game's biome pack.
+  # density = herds per 10 km² in the game. A game setting, not survey data.
+  catalogue:
+    - {sprite: elephant,   name: African bush elephant,  scientific: Loxodonta africana,     habitats: [thorn, bush, woodland, riverine, grass], herd: [3, 12], density: 1.5}
+    - {sprite: giraffe,    name: Giraffe,                scientific: Giraffa camelopardalis, habitats: [thorn, woodland, riverine], herd: [2, 8], density: 1.5}
+    - {sprite: zebra,      name: Plains zebra,           scientific: Equus quagga,           habitats: [grass, thorn], herd: [6, 25], density: 4}
+    - {sprite: grevy,      name: Grevy's zebra,          scientific: Equus grevyi,           habitats: [grass, thorn], herd: [2, 8], density: 0.8}
+    - {sprite: buffalo,    name: African buffalo,        scientific: Syncerus caffer,        habitats: [grass, swamp, riverine, thorn], herd: [10, 40], density: 2}
+    - {sprite: hartebeest, name: Hartebeest,             scientific: Alcelaphus buselaphus,  habitats: [grass], herd: [4, 15], density: 1.5}
+    - {sprite: gazelle,    name: Thomson's gazelle,      scientific: Eudorcas thomsonii,     habitats: [grass], herd: [8, 30], density: 2}
+    - {sprite: gazelle,    name: Grant's gazelle,        scientific: Nanger granti,          habitats: [grass, thorn], herd: [5, 20], density: 2}
+    - {sprite: impala,     name: Impala,                 scientific: Aepyceros melampus,     habitats: [thorn, woodland, riverine], herd: [8, 30], density: 2}
+    - {sprite: eland,      name: Common eland,           scientific: Taurotragus oryx,       habitats: [grass, thorn], herd: [4, 20], density: 1.5}
+    - {sprite: waterbuck,  name: Waterbuck,              scientific: Kobus ellipsiprymnus,   habitats: [riverine, swamp, grass], herd: [3, 10], density: 1.5}
+    - {sprite: warthog,    name: Common warthog,         scientific: Phacochoerus africanus, habitats: [grass, thorn], herd: [1, 5], density: 3}
+    - {sprite: ostrich,    name: Common ostrich,         scientific: Struthio camelus,       habitats: [grass], herd: [1, 6], density: 1.5}
+    - {sprite: baboon,     name: Olive baboon,           scientific: Papio anubis,           habitats: [riverine, woodland, thorn], herd: [10, 30], density: 1.5}
+    - {sprite: hippo,      name: Hippopotamus,           scientific: Hippopotamus amphibius, habitats: [river, water, swamp], herd: [2, 10], density: 1}
+    - {sprite: lion,       name: Lion,                   scientific: Panthera leo,           habitats: [thorn, bush, grass], herd: [2, 7], density: 0.6}
+    - {sprite: hyena,      name: Spotted hyena,          scientific: Crocuta crocuta,        habitats: [grass, thorn, bush], herd: [1, 5], density: 0.8}
+    - {sprite: cheetah,    name: Cheetah,                scientific: Acinonyx jubatus,       habitats: [grass], herd: [1, 3], density: 0.3}
+    - {sprite: rhino,      name: Black rhinoceros,       scientific: Diceros bicornis,       habitats: [bush, thorn, woodland], herd: [1, 2], density: 0.8}
+    - {sprite: rhino,      name: Southern white rhinoceros, scientific: Ceratotherium simum, habitats: [grass, thorn], herd: [1, 4], density: 1}
+  # Plants drawn as scenery.
+  plants:
+    - {sprite: thorn,      name: Whistling thorn,        scientific: Vachellia drepanolobium, habitats: [thorn, bush]}
+    - {sprite: fever_tree, name: Yellow fever tree,      scientific: Vachellia xanthophloea,  habitats: [riverine, swamp]}
+    - {sprite: guarri,     name: Magic guarri,           scientific: Euclea divinorum,        habitats: [bush, woodland]}
+    - {sprite: grass,      name: Red oat grass,          scientific: Themeda triandra,        habitats: [grass, thorn]}
+
+compare:
+  collection: sentinel-2-c1-l2a
+  datetime: 2024-01-01T00:00:00Z/2026-12-31T00:00:00Z
+  max_cloud: 5
+  zooms:            # close-ups for checking alignment (centre lon/lat, width in metres)
+    - {label: "River, riverine woodland and the dam west of the sanctuary", lon: 36.9134, lat: 0.0217, size_m: 3000}
+    - {label: "Lugga with a dam and crossing tracks", lon: 36.9673, lat: 0.0335, size_m: 3000}

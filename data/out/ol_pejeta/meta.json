@@ -1,0 +1,49 @@
+{
+ "id": "ol_pejeta",
+ "name": "Ol Pejeta Conservancy (east of the river)",
+ "crs": "EPSG:32637",
+ "res_m": 10,
+ "width": 1019,
+ "height": 1084,
+ "origin": {
+  "x": 265760,
+  "y": 9300,
+  "note": "top-left corner of cell (0,0), in crs metres"
+ },
+ "bounds_wgs84": [
+  36.89541861575748,
+  -0.013924206366589689,
+  36.98693630261042,
+  0.08408773912090563
+ ],
+ "corners_wgs84": {
+  "tl": [
+   36.89541861575748,
+   0.08408287845065383
+  ],
+  "tr": [
+   36.986934148370395,
+   0.08408773912090563
+  ],
+  "bl": [
+   36.89542080610434,
+   -0.013923401481941627
+  ],
+  "br": [
+   36.986936243632684,
+   -0.013924206366589689
+  ]
+ },
+ "elev_base_m": 1750.0,
+ "elev_scale": 0.1,
+ "files": {
+  "tiles": "tiles.png",
+  "objects": "objects.png",
+  "terrain": "terrain.png",
+  "mask": "mask.png",
+  "legend": "legend.json",
+  "boundary": "boundary.geojson",
+  "osm": "osm.geojson",
+  "species": "species.json"
+ }
+}
